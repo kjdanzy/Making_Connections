@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Making Connections</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="container" >
+            <h1 class="whiteText">Profile</h1>
+            <div id="links" class="container flexRow">
+                <a class="whiteText clearDecoration" href="#">Home</a>
+                <a class="whiteText clearDecoration" href="#">My Profile</a>
+                <a class="whiteText clearDecoration" href="#">Find Connections</a>
+            </div>
+            <button type="button">Sign Out</button>
+        </div>
+
+    </nav>
+    <main class="container minHeight3 ">
+        <div id="maincolumn1" class="container ">
+                <div id="postIt1" class="yellowBkGrd">
+                    <img src="./images/pieceoftape.png" alt="Picture of a piece of tape." class="redTape">
+                    <p>Clicking the edit profile button will change the user's name from Jane Doe to any other name.</p>
+                </div>
+        </div>
+        <div id="maincolumn2" class="container ">
+            <div>
+                <div class="profile minHeight3">
+                    <div class="userImage"><img class="imgLarge" src="./images/user-circle.png" alt="User image"></div>
+                    <div class="profileBottom">
+                        <h3 id="userName" >Kevin Danzy</h3>
+                        <div class="location"><img class="imgSmall" src="./images/icons/map-marker.png" alt="map-marker" />
+                            <h3>Chicago</h3>
+                        </div>
+                        <div class="userInfo">
+                            <h6>Developer | Engineer | Problem Solver</h6>
+                            <h6>Master of shadows and the Internet!!</h6>
+                            <div>
+                                <img class="imgSmall" src="./images/icons/gear.png" alt="" />
+                                <a href="#"><span onclick="editProfile()"> edit profile </span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="userEducation" class="">
+                    <div class="eduContainer">
+                        <div class="">
+                            <h3 id="eduHeader" class="header">Education</h3 id="eduHeader">          </div>
+                        <div class="eduBottom">
+                            <h2>Coding Dojo - Full Stack Bootcamp</h2>
+                            <h3 class="grayText">May 2021 - Sep 2021</h3>
+                            <h3>Triple black belt in Python, MERN, and C#</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="maincolumn3" class="container ">
+            <div>
+                <div id="connRequests" class="">
+                    <div class="connRequests">
+                        <div class="header">
+                            <h1 id="reqCount" class="connRequestCount">2</h1>
+                            <h1>Connecton Requests</h1>
+                        </div>
+                        <div class="connRequestBottom">
+                            <div id="AdrienS" class="connRequest">
+                                <img class="connImage" src="./images/adrien-s.jpg" alt="Picture of adrien-s" />
+                                <span class="connName">Adrien S.</span>
+                                <div>
+                                    <img onclick="remove('AdrienS', 'accept')" class="connIcon" src="/images/icons/accept-circle.png" alt="">
+                                    <img onclick="remove('AdrienS', 'close')" class="connIcon" src="/images/icons/close-circle.png" alt="">
+                                </div>
+                            </div>
+                            <div id="AlayneS"  class="connRequest">
+                                <img class="connImage" src="./images/alayne-s.jpg" alt="Picture of drien-s" />
+                                <span class="connName">Alayn E.</span>
+                                <div>
+                                    <img onclick="remove('AlayneS', 'accept')" class="connIcon" src="/images/icons/accept-circle.png" alt="">
+                                    <img onclick="remove('AlayneS'), 'close'" class="connIcon" src="/images/icons/close-circle.png" alt="">
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="yourConnections">
+                    <div class="header">
+                        <h1 id="yourConnCount" class="yourConnCount">500</h1><h1>Your Connections</h1>
+                    </div>
+                    <div class="yourConnBottom">
+                        <div class="yourConnection">
+                            <img class="yourConnectionImage" src="./images/anne-s.jpg" alt="Picture of Anne-S" />
+                            <span class="yourConnectionName">Anne S.</span>
+                        </div>
+                        <div class="yourConnection">
+                            <img class="yourConnectionImage" src="./images/jane-m.jpg" alt="Picture of Jane M." />
+                            <span class="yourConnectionName">Jane M.</span>
+                        </div>
+                        <div class="yourConnection">
+                            <img class="yourConnectionImage" src="./images/phil-s.jpg" alt="Picture of Phil-S" />
+                            <span class="yourConnectionName">Phil S.</span>
+                        </div>
+                        <div class="yourConnection">
+                            <img class="yourConnectionImage" src="./images/todd-s.jpg" alt="Picture of Todd-S" />
+                            <span class="yourConnectionName">Alayn E.</span>
+                        </div>
+                    </div> 
+                    <div class="yourConnViewMore">
+                        <a href="#">View More</a>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div id="maincolumn4" class="container flexCol gap10 ">
+                <div id="postIt2" class="yellowBkGrd " >
+                    <img src="./images/pieceoftape.png" alt="" class="redTape">
+                    <p>Clicking either button will remove the user from the requests list.</p>
+                </div>
+                <div id="postIt3" class="yellowBkGrd ">
+                    <img src="./images/pieceoftape.png" alt="" class="redTape">
+                    <p><span class="bolder">Bonus: </span>either button decreases the "Connection Requests" number.</p>
+                    <p><span class="bolder">Bonus: </span>the accept button also increases the "Your Connections" number.</p>
+                </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+nav {
+    background-color: black;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/************************************************ flex add ons **********************************/
+
+.flexRow {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.flexCol {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 10px;
+}
+
+/************************************************ profile **********************************/
+.profile {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: teal;
+    margin: 20px auto;
+    border: 3px solid rgb(144, 144, 144);
+    padding: 0;
+    position: relative;
+}
+
+.userName {
+    font-size: 14pt;
+}
+
+.userImage {
+    position: relative;
+    top: 30px;
+    left: 20px
+}
+
+.location {
+    display: flex;
+    justify-content:start;
+    gap: 10px;
+    margin: 10px 0px;
+    padding: 0px;
+    font-size: 11pt;
+}
+
+
+.profileBottom {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 0px;
+    padding: 25px;
+    background-color:white;
+    height: 200px;
+}
+
+/************* Connections *************/
+
+.connContainer {
+    display: flex;
+    flex-direction: column;
+    align-content:space-evenly;
+    justify-content:flex-start;
+    padding: 0px 0px;
+    margin: 10px auto;
+}
+
+.connRequests {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    padding: 5px;
+    margin: 0px auto 0;
+}
+
+
+.connRequestCount {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 50%;
+    background-color: lightgray;
+    color: black;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.connRequest {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin: 5px;
+}
+
+.connImageDiv {
+    width: 300px;
+}
+
+.connImage {
+    width: 60px;
+    border-radius: 50%;border-radius: 50%;
+
+}
+
+.connName {
+    font-size: 12pt;
+    padding-top: 10px;
+    
+}
+
+.connIcon {
+    width: 40px;
+}
+
+.connRequestBottom {
+    border: 3px solid rgb(144, 144, 144);
+    display:flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color:white;
+    width: 300px;
+    padding: 0px;
+}
+
+
+/************* Header for Education Requests and Existing Connections  *************/
+
+.header {
+    display: flex;
+    justify-content: left;
+    align-content: center;
+    align-items: center;
+    background-color: rgb(54, 54, 54);
+    color: white;
+    height: 60px;
+    padding: 5px;
+    font-size: 8pt;
+    gap: 20px;
+}
+
+#eduHeader {
+    font-size: 16pt;
+    text-align: left;
+}
+
+.eduContainer {
+    display: flex;
+    flex-direction: column;
+    align-content:space-evenly;
+    justify-content:flex-start;
+    padding: 0px 0px;
+    margin: 20px auto;
+    
+}
+
+.eduBottom {
+    border: 3px solid rgb(144, 144, 144);
+    display:flex;
+    justify-content: space-around;
+    gap: 10px;
+    flex-direction: column;
+    background-color:white;
+    width: inherit;
+    padding: 20px;
+}
+
+
+/************************************************ your Connections **********************************/
+.yourConnections {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    padding: 0px;
+    margin: 5px 5px;
+}
+
+.yourConnection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.yourConnCount {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 50%;
+    background-color: lightgray;
+    color: black;
+    width: 50px;
+    height: 50px;
+    padding-top: 13px;
+}
+
+.yourConnectionImage {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+
+.yourConnectionName {
+    font-size: 16pt;
+    margin: 25px 50px;
+    width: 80px;
+
+}
+
+.yourConnBottom {
+    border: 3px solid rgb(144, 144, 144);
+    display:flex;
+    justify-content:space-evenly;
+    justify-items: center;
+    align-items: flex-start;
+    gap: 10px;
+    flex-direction: column;
+    align-content: space-around;
+    background-color:white;
+    padding: 0px;
+}
+
+.yourConnViewMore {
+    background-color: white;
+    border: 3px solid rgb(144, 144, 144);
+    padding: 10px;
+}
+
+/************************************************ utilities **********************************/
+.minHeight3 {
+    min-height: 300px;
+}
+
+.minHeight2 {
+    min-height: 200px;
+}
+
+.minWidth3 {
+    min-width: 300px;
+}
+
+.minWidth2 {
+    min-width: 200px;
+}
+
+.clearDecoration {
+    text-decoration: none;
+}
+
+.imgSmall {
+    width: 20px;
+    height: 20px;
+}
+
+.imgMedium {
+    width: 40px;
+    height: 40px;
+}
+
+.imgLarge {
+    width: 60px;
+    height: 60px;
+}
+
+.whiteText {
+    color:white;
+}
+
+.grayText {
+    color:gray;
+}
+
+.grayBkGrd {
+    color:darkgray;
+}
+
+.bolder {
+    font-weight: bolder;
+}
+
+.yellowBkGrd {
+    background-color: yellow;
+    padding: 10px;
+}
+
+.zIndex8 {
+    z-index: 7;
+}
+
+.zIndex8 {
+    z-index: 8;
+}
+
+.zIndex9 {
+    z-index: 9;
+}
+
+/***************************************** post it notes ***********************************/
+
+.redTape {
+    position: relative;    
+    top: -20px;
+    left: 50px;
+    width: 60px;
+}
+.postIt1 {
+    background-color: yellow;
+    left: 200px;
+}
+
+.postIt2 {
+    position: relative;
+    /* top: -50px;
+    width: 150px; */
+}
+
+#postIt3 {
+    position: relative;
+    /* left: -70px;
+    top: 200px;
+    width: 200px; */
+    
+}
+
+.myBorder {
+    outline: 2px dashed orange;
+}
+
+.gap5 {
+    gap: 5px;
+}
+
+.gap10 {
+    gap: 10px;
+}
